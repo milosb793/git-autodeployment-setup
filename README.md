@@ -3,8 +3,8 @@
 
 > Requirements
 
-* Git [1]&nbsp;[2]
-* SSH [3]
+* Git [1](#1) [2](#2)
+* SSH [3](#3)
 
 In this tutorial we're going to make an automated deployment process between our local machine and server code. For example, you're having local project that you want to version with `git` and having always fresh code on server when you do push, without ssh-ing to server always. 
 
@@ -51,7 +51,7 @@ In both cases, what we need done is, when we do `git push origin master` for exa
     git clone /opt/git/bare-repositories/project1.git .
     ```
 
-10. Security tip: _VERY IMPORTANT_ [5]
+10. Security tip: _VERY IMPORTANT_ [5](#5)
 When we're done with cloning, and when we have our project runing at `/var/www/html/project1/` we're having `.git` folder within, which is still unprotected, and that means everyone inquisitive can read source code and much more! To avoid this, run: 
     ```
     chmod -R og-rx /var/www/html/project1/.git
