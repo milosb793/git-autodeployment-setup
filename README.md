@@ -107,8 +107,3 @@ We are done with all setup. Now you can try adding some changes on your local pr
 
 [5][⁵]: [What could possibly go wrong with unprotected `.git` folder?](https://en.internetwache.org/dont-publicly-expose-git-or-how-we-downloaded-your-websites-sourcecode-an-analysis-of-alexas-1m-28-07-2015/)
 
-[¹]:#-note-one
-[²]:#-note-two
-[³]:#-note-three
-[⁴]:#-note-four
-[⁵]:#-note-five
