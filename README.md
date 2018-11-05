@@ -27,19 +27,23 @@ In both cases, what we need done is, when we do `git push origin master` for exa
 
 1. Setup password-less access to our server if not already done
 2. SSH to your server 
-3. Choose a location for our newby git server :3
+3. Choose a location for our newly git server :3
     - I would prefer placing it at `/opt/git/bare-repositories/` or on other safe place. 
 4. Create folder called by your project name and add `.git` extension to it, due consistency, so for example: `project1.git`
 5. Cd to newby created folder and init git bare repo by running: `git init --bare project1.git`
 6. On local machine, `cd` to your project folder and switch remote server to our custom git server by running: 
     ```
-    git remote set-url origin
-    ssh://username@server_ip/opt/git/bare-repositories/project1.git
+    git remote set-url origin ssh://username@server_ip/opt/git/bare-repositories/project1.git
     ```
+    if this one fails with `fatal: No such remote 'origin'` try with: 
+    ```
+    git remote add origin ssh://username@server_ip/opt/git/bare-repositories/project1.git
+    ```
+
 7. Verify origin by running: `git remote -v` it should be remote URL we've just added. 
 8. Now, let's upload our code to the server by pushing it: 
     ```
-    git push origin maste --force-with-lease
+    git push origin master --force-with-lease
     ``` 
 9. SSH back to server and clone our project to place where it will run, from our custom repo: 
     ```
@@ -79,7 +83,7 @@ After we're done with cloning, it's time for fun :)
     fi
     ```
 
-- Make script executable by runnng: 
+- Make script executable by running: 
     ```
     chmod u+x ./post-receive
     ```
@@ -100,4 +104,3 @@ We are done with all setup. Now you can try adding some changes on your local pr
 [3] [Setting SSH keys](http://www.saintsjd.com/2011/01/setting-up-ssh-public-keys/)
 
 [4] http://www.saintsjd.com/2011/03/automated-deployment-of-wordpress-using-git/
-
