@@ -85,6 +85,7 @@ After we're done with cloning, it's time for fun :)
     ```
 
 12. Bon apettit! :bowtie:
+
 We are done with all setup. Now you can try adding some changes on your local project and commit & push it, and check changes live! 
 
 
@@ -93,6 +94,10 @@ We are done with all setup. Now you can try adding some changes on your local pr
 --
 
 [1] [Install Git](https://www.liquidweb.com/kb/install-git-ubuntu-16-04-lts/)
+
 [2] [Setup Git User](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+
 [3] [Setting SSH keys](http://www.saintsjd.com/2011/01/setting-up-ssh-public-keys/)
+
 [4] http://www.saintsjd.com/2011/03/automated-deployment-of-wordpress-using-git/
+
