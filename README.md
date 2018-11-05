@@ -3,8 +3,8 @@
 
 > Requirements
 
-* Git 
-* SSH
+* Git [^1] [^2]
+* SSH [^3]
 
 In this tutorial we're going to make an automated deployment process between our local machine and server code. For example, you're having local project that you want to version with `git` and having always fresh code on server when you do push, without ssh-ing to server always. 
 
@@ -25,12 +25,12 @@ In both cases, what we need done is, when we do `git push origin master` for exa
 
 > Creating local repository
 
-1. Setup password-less access to our server if not already done
+1. Setup password-less access to our server if not already done 
 2. SSH to your server 
 3. Choose a location for our newly git server :3
     - I would prefer placing it at `/opt/git/bare-repositories/` or on other safe place. 
 4. Create folder called by your project name and add `.git` extension to it, due consistency, so for example: `project1.git`
-5. Cd to newby created folder and init git bare repo by running: `git init --bare project1.git`
+5. Cd to newly created folder and init git bare repo by running: `git init --bare project1.git`
 6. On local machine, `cd` to your project folder and switch remote server to our custom git server by running: 
     ```
     git remote set-url origin ssh://username@server_ip/opt/git/bare-repositories/project1.git
@@ -51,7 +51,7 @@ In both cases, what we need done is, when we do `git push origin master` for exa
     git clone /opt/git/bare-repositories/project1.git .
     ```
 
-10. Security tip: _VERY IMPORTANT_
+10. Security tip: _VERY IMPORTANT_ [^5]
 When we're done with cloning, and when we have our project runing at `/var/www/html/project1/` we're having `.git` folder within, which is still unprotected, and that means everyone inquisitive can read source code and much more! To avoid this, run: 
     ```
     chmod -R og-rx /var/www/html/project1/.git
@@ -97,10 +97,12 @@ We are done with all setup. Now you can try adding some changes on your local pr
 ### References
 --
 
-[1] [Install Git](https://www.liquidweb.com/kb/install-git-ubuntu-16-04-lts/)
+[^1]: [Install Git](https://www.liquidweb.com/kb/install-git-ubuntu-16-04-lts/)
 
-[2] [Setup Git User](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+[^2]: [Setup Git User](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 
-[3] [Setting SSH keys](http://www.saintsjd.com/2011/01/setting-up-ssh-public-keys/)
+[^3]: [Setting SSH keys](http://www.saintsjd.com/2011/01/setting-up-ssh-public-keys/)
 
 [4] http://www.saintsjd.com/2011/03/automated-deployment-of-wordpress-using-git/
+
+[5]: [What could possibly go wrong with unprotected `.git` folder?](https://en.internetwache.org/dont-publicly-expose-git-or-how-we-downloaded-your-websites-sourcecode-an-analysis-of-alexas-1m-28-07-2015/)
