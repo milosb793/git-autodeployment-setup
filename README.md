@@ -97,13 +97,13 @@ We are done with all setup. Now you can try adding some changes on your local pr
 ### References
 --
 
-[1][¹]: [Install Git](https://www.liquidweb.com/kb/install-git-ubuntu-16-04-lts/)
 
-[2][²]: [Setup Git User](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+[¹]:[Install Git](https://www.liquidweb.com/kb/install-git-ubuntu-16-04-lts/)
 
-[3][³]: [Setting SSH keys](http://www.saintsjd.com/2011/01/setting-up-ssh-public-keys/)
+[²]:[Setup Git User](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 
-[4]: http://www.saintsjd.com/2011/03/automated-deployment-of-wordpress-using-git/
+[³]:[Setting SSH keys](http://www.saintsjd.com/2011/01/setting-up-ssh-public-keys/)
 
-[5][⁵]: [What could possibly go wrong with unprotected `.git` folder?](https://en.internetwache.org/dont-publicly-expose-git-or-how-we-downloaded-your-websites-sourcecode-an-analysis-of-alexas-1m-28-07-2015/)
+[⁴]: http://www.saintsjd.com/2011/03/automated-deployment-of-wordpress-using-git/
 
+[⁵]:[What could possibly go wrong with unprotected `.git` folder?](https://en.internetwache.org/dont-publicly-expose-git-or-how-we-downloaded-your-websites-sourcecode-an-analysis-of-alexas-1m-28-07-2015/)
