@@ -104,6 +104,6 @@ We are done with all setup. Now you can try adding some changes on your local pr
 
 [³]: [Setting SSH keys](http://www.saintsjd.com/2011/01/setting-up-ssh-public-keys/)
 
-[4]: http://www.saintsjd.com/2011/03/automated-deployment-of-wordpress-using-git/
+[⁴]:&nbsp; http://www.saintsjd.com/2011/03/automated-deployment-of-wordpress-using-git/
 
 [⁵]: [What could possibly go wrong with unprotected `.git` folder?](https://en.internetwache.org/dont-publicly-expose-git-or-how-we-downloaded-your-websites-sourcecode-an-analysis-of-alexas-1m-28-07-2015/)
